@@ -15,7 +15,8 @@ public class web {
             public void run() {
                 try {
                     if (choice == 0) {
-                        String url = "https://developerhyder.000webhostapp.com/patent_db/authenticate.php?username="+username+"&password="+password;
+                        //team mates to change the url contact me
+                        String url = "url/authenticate.php?username="+username+"&password="+password;
                         Document doc = Jsoup.connect(url).get();
                         cons.response = doc.title();
                     }else if(choice == 1){
